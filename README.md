@@ -68,13 +68,13 @@
 ```
 {
   "jumpServerConfig": {
-    "apiUrl": "http://jumpserver.org",      //Jumpserver的hostname或IP地址
-    "accessKeyID": "xxx",                   //Jumpserver的accessKeyID
-    "accessKeySecret": "xxx",               //Jumpserver的Secret
+    "apiUrl": "http://jumpserver.org",  //Jumpserver的hostname或IP地址
+    "accessKeyID": "xxx",               //Jumpserver的accessKeyID
+    "accessKeySecret": "xxx",           //Jumpserver的Secret
     "sshPort": "22",
     "rdpPort": "3389",
-    "linuxPlatform": "29",                  //当判断虚拟机为linux操作系统的时候，使用jumpserver编号为29的platform配置
-    "winPlatform": "5"                      //当判断虚拟机为windows操作系统的时候，使用jumpserver编号为5的platform配置
+    "linuxPlatform": "29",       //当判断虚拟机为linux操作系统的时候，使用jumpserver编号为29的platform配置
+    "winPlatform": "5"           //当判断虚拟机为windows操作系统的时候，使用jumpserver编号为5的platform配置
   }
 }
 ```
