@@ -96,7 +96,7 @@ go build -o bin/proxmoxApi
 ```
 
 # 5.添加为系统服务(以CentOS7为例)
-新建/usr/lib/systemd/system/proxmoxapi.service文件
+## 新建/usr/lib/systemd/system/proxmoxapi.service文件
 加入以下内容：
 ```
 [Unit]
@@ -110,6 +110,7 @@ PrivateTmp=true
 [Install]
 WantedBy=multi-user.target
 ```
+## 运行以下命令
 ```
 systemctl daemon-reload
 systemctl enable proxmoxapi.service
