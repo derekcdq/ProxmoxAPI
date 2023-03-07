@@ -85,7 +85,7 @@
 ```
 git clone https://github.com/derekcdq/ProxmoxAPI.git
 cd /opt/PromoxAPI/
-go run main
+go run main.go
 ```
 
 ## 编译
