@@ -80,15 +80,41 @@
 ```
 
 # 4.运行和编译
+
 ## 运行
 ```
 git clone https://github.com/derekcdq/ProxmoxAPI.git
 cd /opt/PromoxAPI/
 go run main
+```
 
 ## 编译
-  cd /opt/ProxmoxAPI
-  go build -o bin/proxmoxApi
-  ./bin/proxmoxApi
+```
+cd /opt/ProxmoxAPI
+go build -o bin/proxmoxApi
+./bin/proxmoxApi
+```
+
+# 5.添加为系统服务(以CentOS7为例)
+新建/usr/lib/systemd/system/proxmoxapi.service文件
+加入以下内容：
+```
+[Unit]
+Description=ProxmoxAPI
+After=network.target
+[Service]
+PIDFile=/var/run/proxmoxApi.pid
+ExecStart=/opt/ProxmoxAPI/bin/proxmoxApi & -p /var/run/proxmoxApi.pid
+ExecStop=/bin/kill -HUP $MAINPID
+PrivateTmp=true
+[Install]
+WantedBy=multi-user.target
+```
+```
+systemctl daemon-reload
+systemctl enable proxmoxapi.service
+systemctl start proxmoxapi.service
+```
+
   
   
