@@ -78,3 +78,17 @@
   }
 }
 ```
+
+# 4.运行和编译
+## 运行
+```
+git clone https://github.com/derekcdq/ProxmoxAPI.git
+cd /opt/PromoxAPI/
+go run main
+
+## 编译
+  cd /opt/ProxmoxAPI
+  go build -o bin/proxmoxApi
+  ./bin/proxmoxApi
+  
+  
