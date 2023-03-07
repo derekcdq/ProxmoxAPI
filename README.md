@@ -1,0 +1,2 @@
+#ProxmoxAPI
+本项目以ProxmoxVE为iaaS基础环境，将ProxmoxVE平台下的虚拟机信息自动同步到Prometheus平台以及Jumpserver平台，实现了VM虚拟机新增后的数据同步自动化
