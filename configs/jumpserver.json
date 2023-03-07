@@ -5,7 +5,7 @@
     "accessKeySecret": "xxx",
     "sshPort": "22",
     "rdpPort": "3389",
-	"linuxPlatform": "29",
+    "linuxPlatform": "29",
     "winPlatform": "5"
   }
 }
