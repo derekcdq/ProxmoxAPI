@@ -53,7 +53,7 @@
   }
 }
 
-##jumpserver.json
+## jumpserver.json
 {
   "jumpServerConfig": {
     "apiUrl": "http://jumpserver.org",
