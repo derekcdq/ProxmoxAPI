@@ -1,5 +1,10 @@
 # 1.ProxmoxAPI项目介绍
 本项目以ProxmoxVE为IaaS基础环境，将ProxmoxVE平台下的虚拟机信息自动同步到Prometheus平台以及Jumpserver平台（仅支持Jumpserver3.x版本），实现了VM虚拟机新增后的数据同步自动化
+由于ProxmoxVE的接口无法直接取到虚拟机实际的IP，所以本项目的实现依赖于VM的标准化命名以及Proxmox里的资源池设置。
+
+# 2.ProxmoxVE的资源池及虚拟机名设置规则
+资源池命名规则：在数据中心->权限->资源池里设置好以部门为单位的资源池，例如，资源池名称为IT,备注为 企业IT部
+虚拟机命名规则：IT-192.168.10.101
 
 # 2.初始化配置
 初次使用需要进行配置文件的配置，本项目所有配置文件都在configs下面
@@ -63,9 +68,9 @@
 ```
 {
   "jumpServerConfig": {
-    "apiUrl": "http://jumpserver.org",
-    "accessKeyID": "xxx",
-    "accessKeySecret": "xxx",
+    "apiUrl": "http://jumpserver.org",                                 //Jumpserver的hostname或IP地址
+    "accessKeyID": "xxx",                                              //Jumpserver的accessKeyID
+    "accessKeySecret": "xxx",                                          //Jumpserver的Secret
     "sshPort": "22",
     "rdpPort": "3389"
   }
