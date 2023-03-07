@@ -1,0 +1,9 @@
+{
+  "jumpServerConfig": {
+    "apiUrl": "http://jumpserver.org",
+    "accessKeyID": "xxx",
+    "accessKeySecret": "xxx",
+    "sshPort": "22",
+    "rdpPort": "3389"
+  }
+}

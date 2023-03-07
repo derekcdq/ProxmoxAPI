@@ -1,0 +1,10 @@
+{
+  "prometheusConfig": {
+    "vendor": "公司名",
+    "host": "serverIP:ssh端口",
+    "userName": "root",
+    "passWord": "password",
+    "dstPath": "/opt/prometheus/conf.d/",
+    "timeOut": "600"
+  }
+}

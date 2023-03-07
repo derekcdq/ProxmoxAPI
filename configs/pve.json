@@ -1,0 +1,8 @@
+{
+  "pveConfig": {
+    "apiUrl": "https://pvehost:8006/api2/json/",
+    "token": "PVEAPIToken=root@pam!pvetoken=1232132132131231321",
+    "prometheusEnable": "1",
+    "jumpserverEnable": "1"
+  }
+}
