@@ -21,11 +21,11 @@
 ```
 {
   "prometheusConfig": {
-    "vendor": "公司名",
-    "host": "serverIP:ssh端口",
-    "userName": "root",
-    "passWord": "password",
-    "dstPath": "/opt/prometheus/conf.d/",
+    "vendor": "公司名",                                              //会在prometheus生成vendor=XX的标签，一般填写公司名或者是云厂商名称
+    "host": "serverIP:ssh端口",                                      //prometheus服务器的IP以及ssh监听端口
+    "userName": "root",                                             //具有scp权限的ssh账号
+    "passWord": "password",                                         //ssh账号对应的密码
+    "dstPath": "/opt/prometheus/conf.d/",                           //scp超时时间
     "timeOut": "600"
   }
 }
