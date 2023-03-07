@@ -122,14 +122,14 @@ func (t Asset) GetFromSinglePool(poolID string) AssetsList {
 		var p Protocol
 		switch vmConfig.Data.OSType {
 		case "l24", "l26", "solaris":
-			t.Platform = "29"
+			t.Platform = jumpServerConfig.LinuxPlatform
 			port, _ := strconv.Atoi(jumpServerConfig.SSHPort)
 			p = Protocol{
 				Name: "ssh",
 				Port: port,
 			}
 		case "wxp", "w2k", "w2k3", "w2k8", "wvista", "win7", "win8", "win10", "win11":
-			t.Platform = "5"
+			t.Platform = jumpServerConfig.WinPlatform
 			port, _ := strconv.Atoi(jumpServerConfig.RDPPort)
 			p = Protocol{
 				Name: "rdp",

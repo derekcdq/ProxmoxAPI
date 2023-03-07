@@ -36,6 +36,8 @@ type JumpServerConfig struct {
 	AccessKeySecret string
 	SSHPort         string
 	RDPPort         string
+	LinuxPlatform   string
+	WinPlatform     string
 }
 
 var pveConfig *PveConfig
@@ -87,6 +89,8 @@ func (t *JumpServerConfig) Init() interface{} {
 	t.AccessKeySecret = config.Get("jumpServerConfig > accessKeySecret").(string)
 	t.SSHPort = config.Get("jumpServerConfig > sshPort").(string)
 	t.RDPPort = config.Get("jumpServerConfig > rdpPort").(string)
+	t.LinuxPlatform = config.Get("jumpServerConfig > linuxPlatform").(string)
+	t.WinPlatform = config.Get("jumpServerConfig > winPlatform").(string)
 	return t
 }
 
