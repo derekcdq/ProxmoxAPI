@@ -15,7 +15,7 @@
 { 
   "pveConfig": {
   "apiUrl": "https://pvehost:8006/api2/json/",               //ProxmoxVE服务器的API接口地址，具体可参照Proxmox官网
-    "token": "PVEAPIToken=root@pam!pvetoken=12321", //需要在数据中心->权限->API令牌中设置
+    "token": "PVEAPIToken=root@pam!pvetoken=12321",          //需要在数据中心->权限->API令牌中设置
     "prometheusEnable": "1",                                 //是否开启往prometheus同步配置文件，1为启用，0为禁用
     "jumpserverEnable": "1"                                  //是否开启往jumpserver同步主机信息，1为启动，0为禁用
   }
