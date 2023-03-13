@@ -45,7 +45,7 @@
     "color": true
   },
   "File": {
-    "filename": "../logs/promoxapi.log",
+    "filename": "/opt/ProxmoxAPI/logs/proxmoxapi.log",    //此处需填写绝对路径
     "level": "TRAC",
     "daily": true,
     "maxlines": 1000000,
